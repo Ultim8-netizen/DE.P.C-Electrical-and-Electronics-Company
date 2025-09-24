@@ -1,0 +1,2054 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO META TAGS -->
+    <title>DE.P.C Electrical and Electronics Company | Leading Excellence in Audiovisual Technology</title>
+    <meta name="description" content="9 years of experience in audiovisual technology, event solutions, integrated media services, and multimedia production. Illuminate the darkness, elevate the heart.">
+    <meta name="keywords" content="audiovisual technology, event solutions, sound system installation, LED screen rental, event lighting, multimedia production, Abuja, Nigeria">
+    <meta property="og:title" content="DE.P.C Electrical and Electronics Company">
+    <meta property="og:description" content="Leading excellence in audiovisual technology and event solutions. 9 years of experience serving communities in Abuja, Nigeria.">
+    <meta property="og:image" content="./assets/images/og-image.jpg">
+    <meta property="og:url" content="https://depc.com.ng">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Brand Colors - Update these to match your brand */
+            --primary-color: #2563eb;
+            --secondary-color: #1e40af;
+            --accent-color: #f59e0b;
+            --text-dark: #1f2937;
+            --text-light: #6b7280;
+            --background-light: #f9fafb;
+            --white: #ffffff;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --error: #ef4444;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Navigation Styles */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo img {
+            height: 40px;
+            width: auto;
+        }
+        
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        .nav-link:hover {
+            color: var(--primary-color);
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .cta-button {
+            background: var(--primary-color);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+        }
+        
+        .cta-button:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+        }
+        
+        .mobile-menu-toggle {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+        
+        .bar {
+            width: 25px;
+            height: 3px;
+            background: var(--text-dark);
+            transition: 0.3s;
+            border-radius: 3px;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('./assets/images/hero-bg-depc.jpg') center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
+            max-width: 600px;
+            animation: fadeInUp 1s ease;
+        }
+        
+        .hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+        }
+        
+        .hero-tagline {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+        
+        .hero-stats {
+            display: flex;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            display: block;
+            color: var(--accent-color);
+        }
+        
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        .hero-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .btn-primary, .btn-secondary {
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: var(--accent-color);
+            color: white;
+            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(245, 158, 11, 0.4);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn-secondary:hover {
+            background: white;
+            color: var(--primary-color);
+        }
+
+        /* Company Logo Display Area */
+        .company-logo-section {
+            position: absolute;
+            top: 50%;
+            right: 5%;
+            transform: translateY(-50%);
+            z-index: 2;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .company-logo-display {
+            width: 200px;
+            height: 200px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .company-logo-display img {
+            max-width: 180px;
+            max-height: 180px;
+            object-fit: contain;
+        }
+        
+        /* About Section */
+        .about {
+            padding: 8rem 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-text h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        
+        .about-text p {
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Company Story Section */
+        .company-story {
+            padding: 8rem 0;
+            background: var(--background-light);
+        }
+        
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--primary-color);
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            position: relative;
+            margin: 3rem 0;
+            display: flex;
+            align-items: center;
+        }
+        
+        .timeline-item:nth-child(odd) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+        
+        .timeline-date {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+        }
+        
+        /* Leadership Team Section */
+        .leadership {
+            padding: 8rem 0;
+            background: white;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .team-image {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .team-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .team-card:hover .team-image img {
+            transform: scale(1.05);
+        }
+        
+        .team-info {
+            padding: 2rem;
+        }
+        
+        .team-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-role {
+            color: var(--primary-color);
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+        
+        .team-bio {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        .team-social {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .social-link {
+            color: var(--text-light);
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-link:hover {
+            color: var(--primary-color);
+        }
+        
+        /* Facility Showcase */
+        .facility {
+            padding: 8rem 0;
+            background: var(--background-light);
+        }
+        
+        .facility-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
+        .facility-item {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 400px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .facility-item:hover {
+            transform: scale(1.02);
+        }
+        
+        .facility-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .facility-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 2rem;
+        }
+        
+        .facility-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 8rem 0;
+            background: white;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 4rem;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border: 1px solid #f0f0f0;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+            border-color: var(--primary-color);
+        }
+        
+        .service-icon {
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+            color: white;
+            font-size: 1.5rem;
+        }
+        
+        .service-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .service-description {
+            color: var(--text-light);
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .service-features {
+            list-style: none;
+        }
+        
+        .service-features li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .service-features li::before {
+            content: '✓';
+            color: var(--success);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        /* Achievements Gallery */
+        .achievements {
+            padding: 8rem 0;
+            background: var(--background-light);
+        }
+        
+        .filter-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+        
+        .filter-tab {
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        
+        .filter-tab.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+        }
+        
+        .achievements-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .achievement-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .achievement-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+        }
+        
+        .achievement-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .achievement-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .achievement-card:hover .achievement-image img {
+            transform: scale(1.05);
+        }
+        
+        .achievement-content {
+            padding: 1.5rem;
+        }
+        
+        .achievement-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .achievement-date {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        
+        .achievement-description {
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 8rem 0;
+            background: white;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+        
+        .contact-info {
+            background: var(--primary-color);
+            color: white;
+            padding: 3rem;
+            border-radius: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .contact-form {
+            background: var(--background-light);
+            padding: 3rem;
+            border-radius: 20px;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+        
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            background: white;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .submit-btn:hover {
+            background: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Footer */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 4rem 0 2rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-color);
+        }
+        
+        .footer-section p,
+        .footer-section a {
+            color: #d1d5db;
+            text-decoration: none;
+            line-height: 1.8;
+        }
+        
+        .footer-section a:hover {
+            color: var(--accent-color);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #374151;
+            padding-top: 2rem;
+            text-align: center;
+            color: #9ca3af;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-bottom: 1rem;
+        }
+        
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background: var(--accent-color);
+            transform: translateY(-2px);
+        }
+        
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in {
+            animation: fadeInUp 0.8s ease;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background: white;
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 3rem;
+                transition: left 0.3s ease;
+                box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            }
+            
+            .nav-menu.active {
+                left: 0;
+            }
+            
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .mobile-menu-toggle.active .bar:nth-child(1) {
+                transform: rotate(45deg) translate(5px, 6px);
+            }
+            
+            .mobile-menu-toggle.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            
+            .mobile-menu-toggle.active .bar:nth-child(3) {
+                transform: rotate(-45deg) translate(6px, -6px);
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .company-logo-section {
+                position: relative;
+                right: auto;
+                top: auto;
+                transform: none;
+                margin-top: 2rem;
+                text-align: center;
+            }
+
+            .company-logo-display {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .timeline::before {
+                left: 30px;
+            }
+            
+            .timeline-item {
+                flex-direction: row !important;
+                padding-left: 70px;
+            }
+            
+            .timeline-content {
+                width: 100%;
+            }
+            
+            .timeline-dot {
+                left: 30px;
+                transform: translateX(-50%);
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .btn-primary,
+            .btn-secondary {
+                width: 100%;
+                text-align: center;
+                max-width: 300px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero-tagline {
+                font-size: 1rem;
+            }
+            
+            .section-title {
+                font-size: 1.8rem;
+            }
+            
+            .team-grid,
+            .services-grid,
+            .achievements-grid,
+            .facility-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .filter-tabs {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .filter-tab {
+                width: 200px;
+                text-align: center;
+            }
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Loading animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Accessibility */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+        
+        /* Focus styles */
+        a:focus,
+        button:focus,
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: 2px solid var(--primary-color);
+            outline-offset: 2px;
+        }
+        
+        /* Print styles */
+        @media print {
+            .navbar,
+            .mobile-menu-toggle {
+                display: none;
+            }
+            
+            .hero {
+                height: auto;
+                padding: 2rem 0;
+            }
+            
+            * {
+                background: white !important;
+                color: black !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <!-- Company Logo -->
+            <a href="#home" class="logo">
+                <img src="./assets/images/depc-logo.png" alt="DE.P.C Electrical and Electronics Company Logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline';">
+                <span style="display: none;">DE.P.C</span>
+            </a>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="cta-button">Get Quote</a></li>
+            </ul>
+            
+            <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Company Headline -->
+                <h1>Leading Excellence in Audiovisual Technology</h1>
+                
+                <!-- Company Tagline -->
+                <p class="hero-tagline">
+                    Illuminate the darkness, elevate the heart - Creating exceptional sound systems and hosting impactful events that inspire spiritual growth and foster community
+                </p>
+                
+                <!-- Key Statistics -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">9</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">500+</span>
+                        <span class="stat-label">Events Hosted</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100+</span>
+                        <span class="stat-label">Sound Systems Installed</span>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">Get Started Today</a>
+                    <a href="#about" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Company Logo Display Area -->
+        <div class="company-logo-section">
+            <div class="company-logo-display">
+                <!-- INSERT YOUR LARGE COMPANY LOGO HERE -->
+                <img src="./assets/images/depc-main-logo.png" alt="DE.P.C Company Logo" 
+                     onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIiByeD0iMTUiLz48dGV4dCB4PSI1MCUiIHk9IjQwJSIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjI4IiBmaWxsPSJ3aGl0ZSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iIGZvbnQtd2VpZ2h0PSJib2xkIj5ERS5QLkM8L3RleHQ+PHRleHQgeD0iNTAlIiB5PSI2NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMiIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIj5Db21wYW55IExvZ288L3RleHQ+PC9zdmc+';">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About DE.P.C Electrical and Electronics Company</h2>
+                <p class="section-subtitle">
+                    Leveraging electrical and electronics expertise to create exceptional sound systems and host impactful events that inspire spiritual growth, foster community, and serve others.
+                </p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <!-- Company Mission -->
+                    <h3>Our Mission</h3>
+                    <p>
+                        To leverage electrical and electronics expertise to create exceptional sound systems and host impactful events that inspire spiritual growth, foster community, and serve others. With 9 years of experience, we've built our reputation on faith-driven excellence and innovative solutions.
+                    </p>
+                    <p>
+                        From humble beginnings, we've grown into a nationwide recognized company specializing in audiovisual technology, event solutions, integrated media services, and multimedia production. Our commitment to excellence and service has made us a trusted partner for churches, organizations, and communities across Nigeria.
+                    </p>
+                    
+                    <!-- Core Values -->
+                    <h3>Our Core Values</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="padding: 0.5rem 0; position: relative; padding-left: 1.5rem;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: bold;">✓</span>
+                            <strong>Faith-driven excellence:</strong> We strive for technical excellence while staying true to our Christian values
+                        </li>
+                        <li style="padding: 0.5rem 0; position: relative; padding-left: 1.5rem;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: bold;">✓</span>
+                            <strong>Service-oriented:</strong> We prioritize serving others, whether through our events or sound systems
+                        </li>
+                        <li style="padding: 0.5rem 0; position: relative; padding-left: 1.5rem;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: bold;">✓</span>
+                            <strong>Community-focused:</strong> We aim to build connections and foster a sense of belonging through our work
+                        </li>
+                        <li style="padding: 0.5rem 0; position: relative; padding-left: 1.5rem;">
+                            <span style="position: absolute; left: 0; color: var(--primary-color); font-weight: bold;">✓</span>
+                            <strong>Innovative solutions:</strong> We stay up-to-date with the latest technologies to deliver cutting-edge solutions
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="about-image">
+                    <!-- INSERT YOUR COMPANY IMAGE HERE -->
+                    <img src="./assets/images/about-depc-team.jpg" alt="DE.P.C Electrical and Electronics Company Team at Work" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PHRleHQgeD0iNTAlIiB5PSI0NSUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIyNCIgZmlsbD0id2hpdGUiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGR5PSIuM2VtIiBmb250LXdlaWdodD0iYm9sZCI+REUuUC5DPC90ZXh0Pjx0ZXh0IHg9IjUwJSIgeT0iNTglIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+Q29tcGFueSBUZWFtPC90ZXh0Pjwvc3ZnPg==';">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Company Story Timeline -->
+    <section class="company-story">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-subtitle">
+                    Key milestones and achievements that have shaped our company
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <!-- Company Journey Timeline -->
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2015</div>
+                        <h3 class="timeline-title">Humble Beginnings</h3>
+                        <p>Emmanuel Okereke Okwoh started as a simple electrician working under a staircase, driven by determination and a vision for excellence in electrical services.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2017-2020</div>
+                        <h3 class="timeline-title">Expansion into Audiovisual Services</h3>
+                        <p>Leveraging expertise in electrical work, the company expanded into sound system design and installation, beginning to serve churches and organizations across Nigeria.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021-2023</div>
+                        <h3 class="timeline-title">Event Solutions Pioneer</h3>
+                        <p>Diversified services to include comprehensive event hosting, production, and multimedia solutions, establishing DE.P.C as a leader in integrated media services.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024</div>
+                        <h3 class="timeline-title">Leadership Recognition</h3>
+                        <p>Emmanuel Okwoh appointed as director of Millennium Habitat Investment Limited, marking recognition of his business excellence and nationwide company growth.</p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership Team Section -->
+    <section class="leadership" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Leadership Team</h2>
+                <p class="section-subtitle">
+                    Meet the experienced professionals leading our organization
+                </p>
+            </div>
+            
+            <div class="team-grid">
+                <!-- CEO and Founder -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./assets/images/team/emmanuel-okwoh.jpg" alt="Emmanuel Okereke Okwoh - CEO and Founder" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjMjU2M2ViIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTEwIiByPSI0MCIgZmlsbD0id2hpdGUiLz48cGF0aCBkPSJNMTAwIDI1MCBDMTQ0IDIxMCAxNTYgMTgwIDE1MCAxODBTMTU2IDE4MCAyMDAgMjUwIiBmaWxsPSJ3aGl0ZSIvPjx0ZXh0IHg9IjUwJSIgeT0iODUlIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTQiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSIgZm9udC13ZWlnaHQ9ImJvbGQiPkVtbWFudWVsIE9rd29oPC90ZXh0Pjwvc3ZnPg==';">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">Emmanuel Okereke Okwoh</h3>
+                        <p class="team-role">CEO and Founder</p>
+                        <p class="team-bio">
+                            A visionary leader whose journey from humble beginnings as an electrician working under a staircase to building a nationwide recognized company exemplifies determination and excellence. Emmanuel's story is a testament to the power of faith-driven leadership, innovative thinking, and commitment to serving others. As a business executive with Nigerian nationality and residence in England, he was appointed director of Millennium Habitat Investment Limited in March 2024.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="mailto:info@depc.com.ng" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Professional Team Placeholder -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./assets/images/team/technical-director.jpg" alt="Technical Director" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTVlN2ViIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTEwIiByPSI0MCIgZmlsbD0iIzZiNzI4MCIvPjxwYXRoIGQ9Ik0xMDAgMjUwIEMxMDAgMjEwIDEyMCAxODAgMTUwIDE4MCBDMTU1IDE4MCBDMTU1IDE4MCBDMTU1IDE4MCBDMTU1IDE4MFMxODAgMTgwIDIwMCAyNTAiIGZpbGw9IiM2YjcyODAiLz48L3N2Zz4=';">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">INSERT TECHNICAL DIRECTOR NAME</h3>
+                        <p class="team-role">Technical Director</p>
+                        <p class="team-bio">
+                            INSERT TECHNICAL DIRECTOR BIO HERE - Experienced electrical and electronics engineer specializing in sound system design and audiovisual technology integration.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Event Coordinator Placeholder -->
+                <div class="team-card">
+                    <div class="team-image">
+                        <img src="./assets/images/team/event-coordinator.jpg" alt="Event Coordinator" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTVlN2ViIi8+PGNpcmNsZSBjeD0iMTUwIiBjeT0iMTEwIiByPSI0MCIgZmlsbD0iIzZiNzI4MCIvPjxwYXRoIGQ9Ik0xMDAgMjUwIEMxMDAgMjEwIDEyMCAxODAgMTUwIDE4MCBDMTU1IDE4MCBDMTU1IDE4MCBDMTU1IDE4MCBDMTU1IDE4MFMxODAgMTgwIDIwMCAyNTAiIGZpbGw9IiM2YjcyODAiLz48L3N2Zz4=';">
+                    </div>
+                    <div class="team-info">
+                        <h3 class="team-name">INSERT EVENT COORDINATOR NAME</h3>
+                        <p class="team-role">Lead Event Coordinator</p>
+                        <p class="team-bio">
+                            INSERT EVENT COORDINATOR BIO HERE - Expert in event planning and production, specializing in creating impactful spiritual and community events.
+                        </p>
+                        <div class="team-social">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facility Showcase -->
+    <section class="facility">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Facilities</h2>
+                <p class="section-subtitle">
+                    Take a virtual tour of our state-of-the-art facilities and operations
+                </p>
+            </div>
+            
+            <div class="facility-grid">
+                <!-- INSERT YOUR FACILITY IMAGES HERE -->
+                <div class="facility-item" onclick="openModal('facility1')">
+                    <img src="./assets/images/facilities/sound-studio.jpg" alt="Sound System Workshop" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPlNvdW5kIFN5c3RlbSBXb3Jrc2hvcDwvdGV4dD48L3N2Zz4=';">
+                    <div class="facility-overlay">
+                        <h3 class="facility-title">Sound System Workshop</h3>
+                        <p>Professional audio equipment assembly and testing facility</p>
+                    </div>
+                </div>
+                
+                <div class="facility-item" onclick="openModal('facility2')">
+                    <img src="./assets/images/facilities/equipment-storage.jpg" alt="Equipment Storage" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPkVxdWlwbWVudCBTdG9yYWdlPC90ZXh0Pjwvc3ZnPg==';">
+                    <div class="facility-overlay">
+                        <h3 class="facility-title">Equipment Storage</h3>
+                        <p>Climate-controlled storage for rental equipment and installations</p>
+                    </div>
+                </div>
+                
+                <div class="facility-item" onclick="openModal('facility3')">
+                    <img src="./assets/images/facilities/main-office.jpg" alt="Main Office" 
+                         onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxOCIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPk1haW4gT2ZmaWNlPC90ZXh0Pjwvc3ZnPg==';">
+                    <div class="facility-overlay">
+                        <h3 class="facility-title">Main Office - Daikez Plaza</h3>
+                        <p>Customer service and administrative headquarters in Jikwoyi, Abuja</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">
+                    Comprehensive solutions tailored to meet your specific audiovisual and event needs
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Sound System Design and Installation -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3 class="service-title">Sound System Design & Installation</h3>
+                    <p class="service-description">
+                        Tailored sound system solutions for churches, organizations, and events. Our expert team creates customized systems that enhance worship experiences and engage your audience with crystal-clear audio quality.
+                    </p>
+                    <ul class="service-features">
+                        <li>Customized system design for your specific needs</li>
+                        <li>High-quality equipment from reputable manufacturers</li>
+                        <li>Expert installation and seamless integration</li>
+                        <li>Enhanced worship and communication experience</li>
+                    </ul>
+                </div>
+                
+                <!-- Event Hosting and Production -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="service-title">Event Hosting & Production</h3>
+                    <p class="service-description">
+                        Complete event planning and production services designed to create impactful and memorable events that inspire spiritual growth and foster community connections.
+                    </p>
+                    <ul class="service-features">
+                        <li>Comprehensive event planning expertise</li>
+                        <li>Technical support including sound, lighting, and video</li>
+                        <li>Creative production tailored to your goals</li>
+                        <li>Increased attendance and community engagement</li>
+                    </ul>
+                </div>
+                
+                <!-- Technical Support and Maintenance -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3 class="service-title">Technical Support & Maintenance</h3>
+                    <p class="service-description">
+                        24/7 technical support and maintenance services to ensure your sound system and audiovisual equipment operate at optimal levels with minimal downtime.
+                    </p>
+                    <ul class="service-features">
+                        <li>24/7 technical support and troubleshooting</li>
+                        <li>Preventative maintenance programs</li>
+                        <li>Rapid response to technical issues</li>
+                        <li>Reduced downtime and increased reliability</li>
+                    </ul>
+                </div>
+                
+                <!-- Custom Audiovisual Solutions -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="service-title">Custom Audiovisual Solutions</h3>
+                    <p class="service-description">
+                        State-of-the-art audiovisual solutions including projection systems, live streaming, and integrated media services to enhance worship experiences and audience engagement.
+                    </p>
+                    <ul class="service-features">
+                        <li>Customized audiovisual solutions</li>
+                        <li>Latest technology and reliable performance</li>
+                        <li>Seamless integration with existing systems</li>
+                        <li>Enhanced worship experience and communication</li>
+                    </ul>
+                </div>
+                
+                <!-- Event Stage Rental -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3 class="service-title">Event Stage Rental</h3>
+                    <p class="service-description">
+                        Modular and durable event stages for concerts, conferences, and worship services. Our professional team ensures quick setup and safe, stable platforms for your events.
+                    </p>
+                    <ul class="service-features">
+                        <li>Modular design for custom configurations</li>
+                        <li>Durable construction with high-quality materials</li>
+                        <li>Professional setup and dismantling service</li>
+                        <li>Quick and efficient installation process</li>
+                    </ul>
+                </div>
+                
+                <!-- Event Lighting Rental -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="service-title">Event Lighting Rental</h3>
+                    <p class="service-description">
+                        Professional lighting solutions ranging from subtle background lighting to dramatic effects. Customizable lighting plans to enhance the ambiance and atmosphere of your events.
+                    </p>
+                    <ul class="service-features">
+                        <li>Wide variety of lighting fixtures and effects</li>
+                        <li>Professional installation and operation</li>
+                        <li>Customized lighting plans for your vision</li>
+                        <li>Spotlights, floodlights, and LED lighting options</li>
+                    </ul>
+                </div>
+                
+                <!-- Event Sound Rental -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3 class="service-title">Event Sound Rental</h3>
+                    <p class="service-description">
+                        Professional-grade sound equipment rental for concerts, conferences, and events. High-quality audio systems designed to deliver clear and powerful sound for any venue size.
+                    </p>
+                    <ul class="service-features">
+                        <li>Top-of-the-line mixers, speakers, and microphones</li>
+                        <li>Expert setup and operation by experienced technicians</li>
+                        <li>Customized solutions for specific sound requirements</li>
+                        <li>Crystal-clear audio quality for all event types</li>
+                    </ul>
+                </div>
+                
+                <!-- LED Screen Rental -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3 class="service-title">LED Screen Rental</h3>
+                    <p class="service-description">
+                        High-resolution LED screens for presentations, live feeds, and visual displays. Flexible configurations from single screens to multi-screen setups with full technical support.
+                    </p>
+                    <ul class="service-features">
+                        <li>High-resolution displays with excellent brightness</li>
+                        <li>Flexible single or multi-screen configurations</li>
+                        <li>Complete technical support and operation</li>
+                        <li>Perfect for presentations and live event feeds</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Gallery -->
+    <section class="achievements" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Achievements</h2>
+                <p class="section-subtitle">
+                    Showcasing our completed projects, awards, and client success stories
+                </p>
+            </div>
+            
+            <!-- Filter tabs -->
+            <div class="filter-tabs">
+                <div class="filter-tab active" onclick="filterAchievements('all')">All</div>
+                <div class="filter-tab" onclick="filterAchievements('projects')">Projects</div>
+                <div class="filter-tab" onclick="filterAchievements('awards')">Awards</div>
+                <div class="filter-tab" onclick="filterAchievements('testimonials')">Testimonials</div>
+            </div>
+            
+            <div class="achievements-grid" id="achievements-grid">
+                <!-- INSERT YOUR ACHIEVEMENTS HERE -->
+                <div class="achievement-card" data-category="projects">
+                    <div class="achievement-image">
+                        <img src="./assets/images/achievements/church-installation.jpg" alt="Church Sound System Installation" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklOU0VSVCBQUk9KRUNUPC90ZXh0Pjwvc3ZnPg==';">
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">INSERT PROJECT NAME</h3>
+                        <p class="achievement-date">INSERT DATE</p>
+                        <p class="achievement-description">
+                            INSERT PROJECT DESCRIPTION AND OUTCOME HERE
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-category="awards">
+                    <div class="achievement-image">
+                        <img src="./assets/images/achievements/industry-award.jpg" alt="Industry Award" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklOU0VSVCBBV0FSRDwvdGV4dD48L3N2Zz4=';">
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">INSERT AWARD NAME</h3>
+                        <p class="achievement-date">INSERT DATE</p>
+                        <p class="achievement-description">
+                            INSERT AWARD DESCRIPTION AND ITS SIGNIFICANCE
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="achievement-card" data-category="testimonials">
+                    <div class="achievement-image">
+                        <img src="./assets/images/achievements/client-testimonial.jpg" alt="Client Testimonial" 
+                             onerror="this.src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjNmNGY2Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCwgc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxNiIgZmlsbD0iIzZiNzI4MCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPklOU0VSVCBURVNUSU1PTklBTDwvdGV4dD48L3N2Zz4=';">
+                    </div>
+                    <div class="achievement-content">
+                        <h3 class="achievement-title">INSERT CLIENT NAME - ORGANIZATION</h3>
+                        <p class="achievement-date">INSERT DATE</p>
+                        <p class="achievement-description">
+                            "INSERT CLIENT TESTIMONIAL HERE - WHAT THEY SAID ABOUT YOUR WORK AND RESULTS"
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- ADD MORE ACHIEVEMENTS AS NEEDED -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">
+                    Ready to start your project? Contact us today for a consultation
+                </p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <p style="margin-bottom: 2rem; opacity: 0.9;">
+                        We're here to help and answer any question you might have. 
+                        We look forward to hearing from you.
+                    </p>
+                    
+                    <!-- Company Contact Information -->
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Shop No. 1 Daikez Plaza, Jikwoyi<br>
+                               F.C.T Abuja, Nigeria</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+2347036747435" style="color: white; text-decoration: none;">
+                                +234-703-674-7435
+                            </a><br>
+                            <a href="tel:+2349011346171" style="color: white; text-decoration: none;">
+                                +234-901-134-6171
+                            </a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:info@depc.com.ng" style="color: white; text-decoration: none;">
+                                info@depc.com.ng
+                            </a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Business Hours</h4>
+                            <p>Monday - Saturday: 8:00 AM - 6:00 PM<br>
+                               Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Send us a Message</h3>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="company">Company Name</label>
+                            <input type="text" id="company" name="company">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a Service</option>
+                                <option value="sound-system">Sound System Design & Installation</option>
+                                <option value="event-hosting">Event Hosting & Production</option>
+                                <option value="technical-support">Technical Support & Maintenance</option>
+                                <option value="audiovisual-solutions">Custom Audiovisual Solutions</option>
+                                <option value="stage-rental">Event Stage Rental</option>
+                                <option value="lighting-rental">Event Lighting Rental</option>
+                                <option value="sound-rental">Event Sound Rental</option>
+                                <option value="led-rental">LED Screen Rental</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" placeholder="Tell us about your project or inquiry..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <span class="loading" id="loading" style="display: none; margin-left: 10px;"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>DE.P.C Electrical and Electronics Company</h3>
+                    <p>
+                        Leading excellence in audiovisual technology, event solutions, and integrated media services. 
+                        With 9 years of experience, we illuminate the darkness and elevate the heart through exceptional 
+                        sound systems and impactful events that inspire spiritual growth and foster community.
+                    </p>
+                    <div class="social-links">
+                        <!-- INSERT YOUR SOCIAL MEDIA LINKS HERE -->
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="#team">Our Team</a></p>
+                    <p><a href="#services">Services</a></p>
+                    <p><a href="#projects">Projects</a></p>
+                    <p><a href="#contact">Contact</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Our Services</h3>
+                    <p><a href="#services">Sound System Design & Installation</a></p>
+                    <p><a href="#services">Event Hosting & Production</a></p>
+                    <p><a href="#services">Technical Support & Maintenance</a></p>
+                    <p><a href="#services">Audiovisual Solutions</a></p>
+                    <p><a href="#services">Equipment Rentals</a></p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <p><a href="./assets/downloads/depc-brochure.pdf" target="_blank">Company Brochure</a></p>
+                    <p><a href="./assets/downloads/service-catalog.pdf" target="_blank">Service Catalog</a></p>
+                    <p><a href="./assets/downloads/rental-guide.pdf" target="_blank">Equipment Rental Guide</a></p>
+                    <p><a href="#contact">Request Quote</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 DE.P.C Electrical and Electronics Company. All rights reserved.</p>
+                <p style="margin-top: 0.5rem;">
+                    <a href="./assets/downloads/privacy-policy.pdf" style="color: #9ca3af; margin-right: 1rem;">Privacy Policy</a>
+                    <a href="./assets/downloads/terms-of-service.pdf" style="color: #9ca3af;">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal for Facility Images -->
+    <div id="facility-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 10000; align-items: center; justify-content: center;">
+        <div style="position: relative; max-width: 90%; max-height: 90%; background: white; border-radius: 20px; overflow: hidden;">
+            <span onclick="closeModal()" style="position: absolute; top: 20px; right: 30px; color: white; font-size: 40px; font-weight: bold; cursor: pointer; z-index: 10001; background: rgba(0,0,0,0.5); width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">&times;</span>
+            <img id="modal-image" src="" alt="Facility" style="width: 100%; height: 100%; object-fit: contain;">
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar background change on scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 100) {
+                navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+                navbar.style.backdropFilter = 'blur(15px)';
+            } else {
+                navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+                navbar.style.backdropFilter = 'blur(10px)';
+            }
+        });
+
+        // Animate elements on scroll
+        const observeElements = () => {
+            const elements = document.querySelectorAll('.service-card, .team-card, .achievement-card, .timeline-item');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            elements.forEach(element => {
+                observer.observe(element);
+            });
+        };
+
+        // Achievement gallery filtering
+        function filterAchievements(category) {
+            const cards = document.querySelectorAll('.achievement-card');
+            const tabs = document.querySelectorAll('.filter-tab');
+            
+            // Update active tab
+            tabs.forEach(tab => tab.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter cards
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.style.display = 'block';
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        card.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Facility modal functions
+        function openModal(facilityId) {
+            const modal = document.getElementById('facility-modal');
+            const modalImage = document.getElementById('modal-image');
+            
+            // Set appropriate image based on facilityId
+            const facilityImages = {
+                facility1: './assets/images/facilities/sound-studio-large.jpg',
+                facility2: './assets/images/facilities/equipment-storage-large.jpg',
+                facility3: './assets/images/facilities/main-office-large.jpg'
+            };
+            
+            modalImage.src = facilityImages[facilityId] || `./assets/images/facilities/${facilityId}.jpg`;
+            modal.style.display = 'flex';
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('facility-modal');
+            modal.style.display = 'none';
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal when clicking outside the image
+        document.getElementById('facility-modal').addEventListener('click', (e) => {
+            if (e.target.id === 'facility-modal') {
+                closeModal();
+            }
+        });
+
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = document.querySelector('.submit-btn');
+            const loading = document.getElementById('loading');
+            
+            // Show loading state
+            loading.style.display = 'inline-block';
+            submitBtn.disabled = true;
+            submitBtn.style.opacity = '0.7';
+            
+            // Simulate form submission (replace with your actual form handling)
+            setTimeout(() => {
+                // Hide loading state
+                loading.style.display = 'none';
+                submitBtn.disabled = false;
+                submitBtn.style.opacity = '1';
+                
+                // Show success message
+                alert('Thank you for your message! We will get back to you soon.');
+                
+                // Reset form
+                this.reset();
+                
+                // In a real implementation, you would send the form data to your server
+                // or integrate with a service like Formspree, Netlify Forms, etc.
+            }, 2000);
+        });
+
+        // Form validation
+        function validateForm() {
+            const requiredFields = document.querySelectorAll('input[required], textarea[required]');
+            let isValid = true;
+            
+            requiredFields.forEach(field => {
+                if (!field.value.trim()) {
+                    field.style.borderColor = 'var(--error)';
+                    isValid = false;
+                } else {
+                    field.style.borderColor = '#e5e7eb';
+                }
+            });
+            
+            return isValid;
+        }
+
+        // Real-time form validation
+        document.querySelectorAll('input, textarea').forEach(field => {
+            field.addEventListener('blur', validateForm);
+            field.addEventListener('input', function() {
+                if (this.value.trim()) {
+                    this.style.borderColor = 'var(--success)';
+                }
+            });
+        });
+
+        // Initialize animations when page loads
+        window.addEventListener('load', () => {
+            observeElements();
+            
+            // Add stagger animation to team cards
+            const teamCards = document.querySelectorAll('.team-card');
+            teamCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.2}s`;
+            });
+            
+            // Add stagger animation to service cards
+            const serviceCards = document.querySelectorAll('.service-card');
+            serviceCards.forEach((card, index) => {
+                card.style.animationDelay = `${index * 0.15}s`;
+            });
+        });
+
+        // Keyboard navigation for accessibility
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                closeModal();
+                // Close mobile menu
+                mobileMenuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Performance optimization - defer non-critical scripts
+        window.addEventListener('load', () => {
+            console.log('DE.P.C website fully loaded and optimized');
+        });
+    </script>
+
+    <!-- Schema.org structured data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "DE.P.C Electrical and Electronics Company",
+        "url": "https://depc.com.ng",
+        "logo": "https://depc.com.ng/assets/images/depc-logo.png",
+        "description": "Leading excellence in audiovisual technology, event solutions, integrated media services, and multimedia production. 9 years of experience serving communities in Abuja, Nigeria.",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Shop No. 1 Daikez Plaza, Jikwoyi",
+            "addressLocality": "Abuja",
+            "addressRegion": "F.C.T",
+            "addressCountry": "Nigeria"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+234-703-674-7435",
+            "contactType": "customer service",
+            "email": "info@depc.com.ng"
+        },
+        "foundingDate": "2015",
+        "founder": {
+            "@type": "Person",
+            "name": "Emmanuel Okereke Okwoh"
+        },
+        "serviceArea": {
+            "@type": "Place",
+            "name": "Nigeria"
+        },
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Audio Visual Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Sound System Design and Installation"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Event Hosting and Production"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Equipment Rental Services"
+                    }
+                }
+            ]
+        },
+        "sameAs": [
+            "INSERT FACEBOOK URL",
+            "INSERT TWITTER URL",
+            "INSERT LINKEDIN URL",
+            "INSERT INSTAGRAM URL"
+        ]
+    }
+    </script>
+</body>
+</html>
+                
